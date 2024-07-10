@@ -1,0 +1,273 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Merriweather Sans", sans-serif;
+    color: var(--colorLight2);
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-color: #112d4e;
+    background-image: linear-gradient(160deg, #112d4e 0%, #3f72af 100%);
+    overflow-x: hidden;
+}
+
+:root{
+    --colorDark1: #112D4E;
+    --colorDark2: #3F72AF;
+    --colorLight1: #DBE2EF;
+    --colorLight2: #F9F7F7;
+}
+
+.heading{
+    margin-top: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.tab-container{
+    max-width: 550px;
+    margin: 0 auto;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.tab.current-tab{
+    background-color: rgba(219, 226, 239, 0.5);
+    border-radius: 4px;
+}
+
+.tab{
+    cursor: pointer;
+    font-size: 0.875rem;
+    letter-spacing: 1.75px;
+    padding: 5px 8px;
+}
+
+.weather-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.btn{
+    margin: a;
+    all: unset;
+    background-color: var(--colorDark2);
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+/* .grant-location.active{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
+} */
+
+.grant-location.active{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+/* .sub-grant{
+    gap: 20px;
+} */
+
+.grant-location{
+    display: none;
+}
+
+
+
+.grant-location img{
+    margin-bottom: 2rem;
+}
+
+.grant-location .para1{
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 0.75rem;
+}
+
+.grant-location p:last-of-type{
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-bottom: 1.75rem;
+    letter-spacing: 0.75px;
+}
+
+.loading-container{
+    display: none;
+}
+
+.loading-container.active{
+    display: block;
+}
+
+.loading-container p{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.user-info-container{
+    display: none;
+}
+
+.user-info-container.active{
+    display: block;
+}
+
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.name p{
+    font-size: 32px;
+    font-weight: lighter;
+}
+
+.name img{
+    width: 32px;
+    height: 25px;
+}
+
+.typeOFweather{
+    text-transform: capitalize;
+    font-size: 24px;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.typeOFweatherImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.typeOFweatherImg img{
+    width: 90px;
+    height: 90px;
+}
+
+.temperature{
+    font-size: 44px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.three{
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 32px;
+    margin-bottom: 20px;
+}
+
+.one{
+    width: 30%;
+    max-width: 200px;
+    text-align: center;
+    background-color: rgba(219, 226, 239, 0.5);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px 0;
+    padding: 1rem 6.3rem;
+}
+
+.data-speed, .data-humid, .data-cloud{
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+.form-container{
+    display: none;
+}
+
+.form-container.active{
+    /* margin-top: 100px; */
+    /* display: block; */
+    width: 90%;
+    max-width: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
+    gap: 0 10px;
+    /* margin-bottom: 3rem; */
+}
+
+.form-container input{
+    all: unset;
+    width: calc(100% - 80px);
+    height: 40px;
+    border-radius: 10px;
+    padding: 0 20px;
+    background-color: rgba(219, 226, 239, 0.5);
+    /* border: none; */
+    margin-top: 60px;
+}
+
+.form-container input::placeholder{
+    color: rgba(255, 255, 255 , 0.7);
+}
+
+.form-container input:focus{
+    outline:3px solid rgba(255, 255, 255 , 0.7) ;
+}
+
+
+.form-container .btn{
+    margin-top: 60px;
+    border-radius: 100% ;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: unset;
+}
+
+.errorPage{
+    display: none;
+}
+
+.errorPage.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.errorPage img{
+    margin-top: 60px;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 15px;
+}
+
+.errorPage p{
+    text-align: center;
+    text-transform: lowercase;
+}
